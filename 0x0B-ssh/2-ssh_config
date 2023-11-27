@@ -1,9 +1,6 @@
-# ssh configuration
-# /etc/ssh/ssh_config
+# SSH client configuration to use the private key ~/.ssh/school
+# SSH client configuration to refuse to authenticate using a password
+
 Host *
-    PasswordAuthentication no
-    IdentityFile ~/.ssh/school
-    SendEnv LANG LC_*
-    HashKnownHosts yes
-    GSSAPIAuthentication yes
-    GSSAPIDelegateCredentials no
+     PasswordAuthentication no
+     IdentityFile ~/.ssh/school
